@@ -44,7 +44,7 @@ const Experience = () => {
   return (  
     <div className='h-[70vh] w-full flex flex-col gap-8'>
       <Section title="Experience"/>
-      <div className='flex w-full justify-between items-center'>
+      <div className='flex w-full justify-between items-cente'>
         {/* Ensure this column takes up some space but doesn't overflow */}
         <div className="leftExp flex flex-col w-1/3">
           {ExperienceData.map((data, index)=> {
@@ -63,9 +63,10 @@ const Experience = () => {
           {ExperienceData.map((data, index)=> {
             return (
               <div className={`${selectedDate === index ? 'flex flex-col gap-4'  : 'hidden'} text-white`}> 
-                <h1 className="title text-secondary-secondary-3">{data.title}</h1>
-                <span className="company">{data.company}</span>
-                <span className="what-i-did">{data.description}</span>
+                <h1 className="title text-secondary-secondary-3 font-semibold">{data.title}</h1>
+                <span className="company text-[15px] ">{data.company}</span>
+                <span className="what-i-did text-sm text-tertiary-tertiary-2">{data.description}
+                </span>
               </div>
             )
           })}
