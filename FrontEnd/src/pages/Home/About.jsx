@@ -55,16 +55,16 @@ export const About = () => {
                   <img src={abtImg} alt="re" />
             </div>
             <div className="right-abt flex flex-col md:text-sm text-[11px] gap-4">
-                <span className='text-white '>
+                <span className='text-tertiary-tertiary-2 '>
                 I’m a dedicated front-end and full-stack developer with a strong foundation in building scalable web applications. I excel in using technologies like HTML, React, and JavaScript to create clean, responsive, and dynamic user interfaces.
                 </span>
-                <span className='text-white '>
+                <span className='text-tertiary-tertiary-2 '>
                 Additionally, my skills extend to the back end with Node.js, Express.js, and MongoDB, allowing me to develop robust APIs and manage databases efficiently.
                 </span>
             </div>
         </div>
         <div className='flex flex-col gap-4'>
-            <div className='text-md text-tertiary-tertiary-3'> Here's a few technologies ive been working with recentlty: </div>
+            <div className='text-md text-secondary-secondary-3'> Here's a few technologies ive been working with recentlty: </div>
             <div className="skills flex gap-4 flex-wrap text-tertiary-tertiary-3">
                 {skills.map((skill)=> {
                     return (

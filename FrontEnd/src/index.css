@@ -24,3 +24,20 @@ body {
     background-color: rgb(0, 114, 214);
     
 }
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5CCFE6;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2d3748; 
+    border-radius: 10px;
+  }
+  

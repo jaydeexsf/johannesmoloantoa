@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import Section from '../../components/Section';
 import ProjectsData from '../../assets/resources/ProjectsData';
+import jimneys from '../../assets/images/jimneys.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
 
   return (
-    <div className="h-[100vh] pb-16 w-full flex flex-col gap-8">
-      <Section title="Projects" />
+    <div className="h-[80vh] md:pb-8 w-full flex flex-col ">
+      <Section title="Projects" className=""/>
       
-      <div className="flex flex-col w-full md:gap-36 pt-12 md:flex-row h-full">
+      <div className="flex flex-col w-full md:gap-36 items-center md:flex-row mt-8 h-full gap-8">
         {/* Scrollable container for project names */}
-        <div className="w-full md:w-[unset]   overflow-x-auto md:overflow-hidden flex md:flex-col items-cente md:space-x-0 space-x-4 pb-2">
+        <div className="w-full md:w-[unset]   overflow-x-auto pb-12  md:overflow-hidden flex md:flex-col items-cente md:space-x-0 space-x-4 pb-2">
           {ProjectsData.map((data, index) => (
             <div
               key={index}
@@ -26,11 +27,17 @@ const Projects = () => {
         </div>
 
         {/* Project details */}
-        <div className="rightExp flex-1 h-fit bg-gray-800 p-6 rounded-md shadow-lg">
+        <div className="rightExp flex-1  h-fit bg-gray-800 p-6 max-w-[700px] rounded-md shadow-lg">
           {ProjectsData.map((data, index) => (
-            <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col gap-4`}>
+            <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col gap-4 `}>
               <h1 className="text-secondary-secondary-3 text-2xl font-semibold">{data.name}</h1>
-              <p className="text-tertiary-tertiary-2 text-sm">{data.description}</p>
+              {/* The UI looks bad with the image */}
+              {/* <img 
+                        src={jimneys} 
+                        alt="" 
+                        className='w-full md:h-[20vw] md:hidden block object-cover'
+                    /> */}
+              <p className="text-tertiary-tertiary-2 text-sm text-cente">{data.description}</p>
               <div className="flex gap-4">
                 <a
                   href={data.sourceCode}

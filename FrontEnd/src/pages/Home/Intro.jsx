@@ -1,4 +1,5 @@
 import React from 'react'
+import CV from '../../assets/resources/JohannesMoloantoaCV.pdf'
 
 export const Intro = () => {
   return (
@@ -10,11 +11,11 @@ export const Intro = () => {
         <div className='md:text-5xl text-3xl'>
             I build things for the web
         </div>
-        <div className="md:text-sm text-[12px] text-white">
-            im a full stack developer. Currently im working as a React developer in South Afrieca.
+        <div className="md:text-sm text-[12px] text-tertiary-tertiary-2 w-[50vw]">
+           I'm a full stack developer. Currently developing Websites with the MERN Stack. I enjoy working on both the client and server side. Let's build something amazing together!
         </div>
         <div>
-            <button className='text-secondary-secondary-2 hover:bg-secondary-secondary-2 hover:text-primary-dark-bg-1 transition-all duration-300 hover:cursor-pointer border border-secondary-secondary-2  py-2 px-6'>Dowload CV</button>
+           <a href={CV} download> <button  className='text-secondary-secondary-2 text-sm hover:bg-secondary-secondary-2 hover:text-primary-dark-bg-1 transition-all duration-300 hover:cursor-pointer border border-secondary-secondary-2  py-[8px] px-6'>Dowload CV</button></a>
         </div>
     </div>
   )
