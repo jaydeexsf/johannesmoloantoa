@@ -7,6 +7,7 @@ import Header from '../../components/Header'
 import Projects from './Projects'
 import { Contact } from './Contact'
 import { Footer } from '../../components/Footer'
+import Loader from '../../components/Loader'
 
 const Home = () => {
   return (
