@@ -2,8 +2,11 @@ import ContactData from "../../assets/resources/ContactData"
 import Section from "../../components/Section";
 
 export const Contact = ()=> {
+
+
+  
         return (
-           <div className="pt-16"> 
+           <div className="pt-[120px] md:pt-12"> 
             <Section title="Say Hello To"/>
             <div className="contact-details mt-12 text-tertiary-tertiary-2 px-12 h-[40vh]">
                 <div>{'{'}</div>

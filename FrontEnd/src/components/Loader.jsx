@@ -5,7 +5,7 @@ const Loader = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-slate-800">
      
       <div className="relative flex justify-center items-center mb-6">
-        <div className="loader md:w-20 w-15 h-15 md:h-20 border-4 border-t-4 border-t-teal-400 border-slate-600 rounded-full animate-spin"></div>
+        <div className="loader md:w-20 w-16 h-16 md:h-20 border-4 border-t-4 border-t-teal-400 border-slate-600 rounded-full animate-spin"></div>
         <span className="absolute text-teal-300 text-xl font-semibold tracking-wider">
           MJ
         </span>

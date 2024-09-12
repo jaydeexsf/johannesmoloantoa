@@ -6,7 +6,7 @@ export const ModeContext = createContext();
 export const ModeProvider = ({ children }) => {
     const [portfolioData, setPortfolioData] = useState(null);
 
-    // Function to fetch data
+    // Function to fetch data from my backend api
     const getPortfolioData = async () => {
         try {
             const response = await axios.get('http://localhost:4000/api/data');
