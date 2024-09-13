@@ -16,7 +16,7 @@ const Projects = () => {
           setProjectData(portfolioData.projects)
       }
   }, [portfolioData])
-// console.log(ProjectData)
+// console.log(ProjectsData.name)
 
   return (
     <div className="h-[60vh] min-h-[400px] md:pb-8 gap-8 w-full flex flex-col ">

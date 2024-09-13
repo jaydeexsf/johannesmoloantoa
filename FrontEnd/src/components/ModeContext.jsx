@@ -20,12 +20,6 @@ export const ModeProvider = ({ children }) => {
         getPortfolioData();
     }, []); 
 
-    // useEffect(() => {
-    //     if (portfolioData) {
-    //         console.log(portfolioData);
-    //     }
-    // }, [portfolioData]);
-
     return (
         <ModeContext.Provider value={{ portfolioData }}>
             {children}

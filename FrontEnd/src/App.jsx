@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Loader from './components/Loader';
 import { ModeContext } from './components/ModeContext';
+import Admin from './pages/Admin/Admin';
 
 const App = () => {
   const { portfolioData } = useContext(ModeContext);
@@ -23,6 +24,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/admin' element={<Admin />} />
         </Routes>
       </Router>
 }
