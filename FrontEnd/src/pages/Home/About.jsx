@@ -17,7 +17,7 @@ useEffect(()=> {
 
 
   return (
-    <div className='flex flex-col gap-8 pb-16'>
+    <div className='flex flex-col pt-12 gap-8 pb-16'>
         <Section title="About"/>
         <div className='bottom-about flex gap-4 justify-center items-center'>
             <div className="left-abt">

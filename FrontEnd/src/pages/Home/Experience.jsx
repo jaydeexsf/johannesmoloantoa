@@ -6,7 +6,7 @@ const Experience = () => {
   const [selectedDate, setSelectedDate] = useState(0);
 
   return (  
-    <div className='md:h-[70vh] pb-12 w-full flex flex-col gap-8'>
+    <div className='md:h-[60vh]  pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
       <div className='flex w-full flex-col md:flex-row  justify-between pt-8 items-cente'>
 
