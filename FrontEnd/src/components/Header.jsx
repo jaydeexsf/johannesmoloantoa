@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return ( 
-    <div className="bg-primary-dark-bg-2 text-white font-semibold p-4 flex items-center justify-between">
+    <div className="bg-primary-dark-bg-1 text-white font-semibold p-4 flex items-center justify-between">
       <div className="name text-2xl">
         <span className="text-secondary-secondary-3 text-3xl">J</span>ohannes 
       </div>
