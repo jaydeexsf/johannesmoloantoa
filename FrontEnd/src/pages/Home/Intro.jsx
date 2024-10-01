@@ -1,32 +1,32 @@
 import React, { useContext, useEffect, useState } from 'react'
 import CV from '../../assets/resources/JohannesMoloantoaCV.pdf'
-import { ModeContext } from '../../components/ModeContext'
+// import { ModeContext } from '../../components/ModeContext'
 // import { set } from 'mongoose';
 
 export const Intro = () => {
 
-  const { portfolioData } = useContext(ModeContext);
+  // const { portfolioData } = useContext(ModeContext);
 
-  const [introData, setintroData] = useState(portfolioData.intro)
+  // const [introData, setintroData] = useState(portfolioData.intro)
   
-  useEffect(()=> {
-      if(portfolioData) {
-          setintroData(portfolioData.intro)
-      }
-  }, [portfolioData])
-  console.log(introData)
+  // useEffect(()=> {
+  //     if(portfolioData) {
+  //         setintroData(portfolioData.intro)
+  //     }
+  // }, [portfolioData])
+  // console.log(introData)
   
   return (
-    <div className='flex flex-col gap-8 md:gap-10 w-full pb-12  sm:min-h-[420px] md:h-[70vh] py-8'>
-        <div className="text-sm">{introData[0].welcomeText}</div>
+    <div className='flex flex-col gap-8 md:gap-10 w-full  sm:min-h-[420px] md:h-[70vh] py-8'>
+        <div className="text-sm">Hi, I'm </div>
         <div className="text-secondary-secondary-1 text-3xl md:text-5xl ">
-            {introData[0].fristName + ' ' + introData[0].lastname} 
+          Johannes Moloantoa
         </div>
         <div className='md:text-5xl text-3xl'>
-           {introData[0].caption}
+        I Build Stuff For The Web
         </div>
         <div className="md:text-sm text-[12px] text-tertiary-tertiary-2 w-full md:w-[50vw]">
-           {introData[0].description}
+        I'm a full stack dev with 1 year of experience with front end development and 5 months experience with backend. Let's Build Something Together.
         </div>
         <div>
            <a href={CV} download> <button  className='text-secondary-secondary-2 text-[12px] md:text-sm hover:bg-secondary-secondary-2 hover:text-primary-dark-bg-1 transition-all duration-300 hover:cursor-pointer border border-secondary-secondary-2 py-[6px] px-4  md:py-[8px] md:px-6'>Dowload CV</button></a>

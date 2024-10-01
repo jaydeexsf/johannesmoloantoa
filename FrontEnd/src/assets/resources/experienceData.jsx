@@ -1,4 +1,4 @@
-export const ExperienceData = [
+export const ExperienceDat = [
     {
       "title": "Front-End Developer",
       "company": "Jimney's Fish & Chips",
@@ -71,3 +71,4 @@ export const ExperienceData = [
     }
   ]
   
+  export default { ExperienceDat } 

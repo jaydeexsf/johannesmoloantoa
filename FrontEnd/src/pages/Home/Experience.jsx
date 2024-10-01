@@ -1,27 +1,27 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Section from '../../components/Section'
-// import { ExperienceData } from '../../assets/resources/experienceData'
+import { ExperienceDat } from '../../assets/resources/experienceData'
 import { ModeContext } from '../../components/ModeContext'
 
 const Experience = () => {
   const [selectedDate, setSelectedDate] = useState(0);
 
-  const { portfolioData } = useContext(ModeContext);
+//   const { portfolioData } = useContext(ModeContext);
 
-const [ExperienceData, setExperienceData] = useState(portfolioData.experience)
+const [ExperienceData, setExperienceData] = useState(ExperienceDat)
 
-useEffect(()=> {
-    if(portfolioData) {
-        setExperienceData(portfolioData.experience)
-    }
-}, [portfolioData])
+// useEffect(()=> {
+//     if(portfolioData) {
+//         setExperienceData(portfolioData.experience)
+//     }
+// }, [portfolioData])
 
   return (  
     <div className='md:h-[60vh]  pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
       <div className='flex w-full flex-col md:flex-row  justify-between pt-8 items-center'>
 
-        <div className="leftExp flex flex-row flex-shrink-0 overflow-auto w-full md:flex-col md:w-1/3">
+        <div className="leftExp flex gap-2 flex-row flex-shrink-0 overflow-auto w-full md:flex-col md:w-1/3">
           {ExperienceData.map((data, index)=> {
             return (
               <div onClick={()=> setSelectedDate(index)} className='font-normal  overflow-auto flex flex-shrink-0 cursor-pointer text-[14px]  '>

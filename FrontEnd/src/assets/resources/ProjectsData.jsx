@@ -1,4 +1,4 @@
- const Projects = [
+ const ProjectsIn = [
       {
         "name": "CampusNavigator",
         "description": "A web application that helps students at the University of Limpopo find the nearest classes and buildings using OpenStreetMap data and Dijkstra's Algorithm for navigation.",
@@ -43,4 +43,4 @@
       }
     ]
   
-  export default Projects;
+  export default ProjectsIn;
