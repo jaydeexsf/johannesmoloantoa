@@ -1,28 +1,38 @@
 import React from 'react';
 import { Tabs } from 'antd';
+import Header from '../../components/Header'
+import AdminIntro from './AdminIntro'
+
 const onChange = (key) => {
   console.log(key);
 };
 const items = [
   {
     key: '1',
-    label: 'Tab 1',
-    children: 'Content of Tab Pane 1',
+    label: 'Intro',
+    children: <AdminIntro />,
   },
   {
     key: '2',
-    label: 'Tab 2',
+    label: 'About',
     children: 'Content of Tab Pane 2',
   },
   {
     key: '3',
-    label: 'Tab 3',
+    label: 'Experience',
     children: 'Content of Tab Pane 3',
   },
 ];
+
 const Admin = () => {
-    <div className='bg-secondary-secondary-3'>
+  return (
+    <div>
+      <Header />
+      <main className='py-0 px-4 font-semibold'>
         <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
+      </main>
     </div>
+  )
 }
-export default Admin;
+
+export default Admin
