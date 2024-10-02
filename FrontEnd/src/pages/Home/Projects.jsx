@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
 
         {/* Project details */}
-        <div className="rightExp flex-1 h-fit bg-gradient-to-r  from-secondary-secondary-2/20 to-primary-dark-bg-1 border shadow-md shadow-secondary-secondary-2 border-secondary-secondary-2 pb-8 bg-gray-800 p-3 max-w-[900px] rounded-md shadow-lg">
+        <div className="rightExp flex-1 h-fit bg-gradient-to-r  from-secondary-secondary-2/20 to-primary-dark-bg-1 border-gradient-to-r to-secondary-secondary-3/20 border shadow-md shadow-secondary-secondary-2 border-secondary-secondary-2 pb-8 bg-gray-800 p-3 max-w-[900px] rounded-md shadow-lg">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex gap-6 flex-col sm:flex-row`}>
               <div className='sm:w-[150%] h-full'>
