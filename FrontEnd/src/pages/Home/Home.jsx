@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className=''>
        <Header />
-        <div className='bg-primary-dark-bg-2 flex flex-col px-8  sm:px-[10vw]'>
+        <div className='bg-primary-dark-bg-2 flex flex-col px-8 xl:px-[11%] 2xl:px-[20%]  sm:px-[10vw]'>
             <Intro />
             <About />
             <Experience />

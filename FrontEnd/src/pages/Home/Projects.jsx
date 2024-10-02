@@ -32,12 +32,12 @@ const Projects = () => {
 // console.log(ProjectsData.name)
 
   return (
-    <div className="sm:h-[60vh] min-h-[400px] md:pb-8 gap-8 w-full flex flex-col ">
+    <div className="sm:h-[60vh] pt-0 max-h-[500px] min-h-[400px] md:pb-[-10px] gap-8 w-full flex flex-col ">
       <Section title="Projects" className=""/>
       
-      <div className="flex flex-col w-full md:gap-36 items-center  md:flex-row mt-8 h-full gap-2">
+      <div className="flex flex-col w-full md:gap-36 items-center  md:flex-row mt-2 h-full gap-2">
         {/* Scrollable container for project names */}
-        <div className="w-full md:w-[unset]   overflow-x-auto pb-12  md:overflow-hidden flex md:flex-col items-cente md:space-x-0 space-x-4 pb-2">
+        <div className="w-full md:w-[unset] mb-4  overflow-x-auto pb-12  md:overflow-hidden flex md:flex-col items-cente md:space-x-0 space-x-4 pb-2">
           {ProjectsData.map((data, index) => (
             <div
               key={index}
@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
 
         {/* Project details */}
-        <div className="rightExp flex-1  h-fit bg-gray-800 p-2 max-w-[900px] rounded-md shadow-lg">
+        <div className="rightExp flex-1 h-fit bg-gray-800 p-3 max-w-[900px] rounded-md shadow-lg">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex gap-6 flex-col sm:flex-row`}>
               <div className='sm:w-[150%] h-full'>

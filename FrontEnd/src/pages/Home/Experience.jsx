@@ -17,9 +17,9 @@ const [ExperienceData, setExperienceData] = useState(ExperienceDat)
 // }, [portfolioData])
 
   return (  
-    <div className='md:h-[60vh]  pb-12 w-full flex flex-col gap-8'>
+    <div className='md:h-[60vh] max-h-[400px] pt-8  pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
-      <div className='flex w-full flex-col md:flex-row  justify-between pt-8 items-center'>
+      <div className='flex w-full flex-col md:flex-row mt-  justify-between pt-4 items-center'>
 
         <div className="leftExp flex gap-2 flex-row flex-shrink-0 overflow-auto w-full md:flex-col md:w-1/3">
           {ExperienceData.map((data, index)=> {
@@ -33,12 +33,12 @@ const [ExperienceData, setExperienceData] = useState(ExperienceDat)
           })}
         </div>
         
-        <div className="rightExp pt-1 md:w-2/3">
+        <div className="rightExp pt-6 md:pt-1 md:w-2/3">
           {ExperienceData.map((data, index)=> {
             return (
               <div className={`pt-0 ${selectedDate === index ? 'flex flex-col gap-4'  : 'hidden'} text-white`}> 
                 <h1 className="title text-secondary-secondary-3 font-semibold">{data.title}</h1>
-                <span className="company text-[15px] ">{data.company}</span>
+                <span className="company mt-[-13px] mb-2 text-[12px] ">{data.company}</span>
                 <span className="what-i-did w-full text-sm text-tertiary-tertiary-2">{data.description}
                 </span>
               </div>

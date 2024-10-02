@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Section from '../../components/Section';
 import abtImg from '../../assets/images/21004063-removebg-preview.png';
+import myImage from '../../assets/images/myImage.png'
 // import { ModeContext } from '../../components/ModeContext'
 
 export const About = () => {
@@ -24,14 +25,14 @@ export const About = () => {
 
   return (
     <div className='flex flex-col pt-12 gap-8 pb-16'>
-      <Section title="About" />
+      <Section title="About Me" />
       <div className='bottom-about flex gap-4 justify-center items-center'>
-        <div className="left-abt">
-          <img src={abtImg} alt="About Me" />
+        <div className="left-abt border-secondary-secondary-2 border shadow-md hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[80%] transition-all duration-300 max-w-[100px]">
+          <img src={myImage} className='sm:mt-[-80px] mt-[-50px]' alt="About Me" />
         </div>
         <div className="right-abt flex flex-col md:text-sm text-[12px] gap-4">
           <span className='text-tertiary-tertiary-2'>
-            I’m a dedicated front-end and full-stack developer with a strong foundation in building scalable web applications. I excel in using technologies like HTML, React, and JavaScript to create clean, responsive, and dynamic user interfaces.
+            I’m a dedicated front-end and full-stack developer with a strong foundation in building scalable web applications. I excel in using technologies like, React, Tailwind CSS, and JavaScript to create clean, responsive, and dynamic user interfaces.
           </span>
           <span className='text-tertiary-tertiary-2'>
             Additionally, my skills extend to the back end with Node.js, Express.js, and MongoDB, allowing me to develop robust APIs and manage databases efficiently.
