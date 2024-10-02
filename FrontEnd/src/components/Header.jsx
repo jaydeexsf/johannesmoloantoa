@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({prof}) => {
   return ( 
     <div className="bg-primary-dark-bg-1 sticky top-0 left-0 z-[1000000000000] text-white font-semibold p-4 flex items-center justify-between">
       {/* <div className="name text-2xl">
