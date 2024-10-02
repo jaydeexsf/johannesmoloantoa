@@ -1,74 +1,52 @@
 export const ExperienceDat = [
-    {
-      "title": "Front-End Developer",
-      "company": "Jimney's Fish & Chips",
-      "location": "Remote",
-      "period": "May 2024 - Present",
-      "description": "Developed and maintained the website for Jimney's Fish & Chips using ReactJS and Tailwind CSS. Integrated responsive design, optimized performance, and improved the overall user experience. Worked closely with the client to deliver custom features and ensured compatibility across multiple devices.",
-      "responsibilities": [
-        "Built interactive UI components using React and GSAP.",
-        "Implemented responsive design with Tailwind CSS for optimal viewing on mobile and desktop.",
-        "Collaborated with the client to refine UX and improve page load performance.",
-        "Handled version control and deployment using GitHub."
-      ],
-      "tools": [
-        "ReactJS",
-        "Tailwind CSS",
-        "JavaScript",
-        "GSAP",
-        "GitHub"
-      ],
-      "achievements": [
-        "Reduced page load time by 30%, leading to higher user retention.",
-        "Increased mobile accessibility, resulting in a 20% boost in mobile visitors."
-      ]
-    },
-    {
-      "title": "Full-Stack Developer",
-      "company": "ULCampusPathways",
-      "period": "August 2024 - Present",
-      "description": "Led the development of UL Campus Pathways, a web app helping students find the nearest buildings and classes at the University of Limpopo. Utilized OpenStreetMap data and Dijkstra's Algorithm to create a real-time map interface with location detection.",
-      "responsibilities": [
-        "Implemented the map interface using OpenStreetMap data and JavaScript.",
-        "Developed real-time location tracking to guide students to their destinations.",
-        "Integrated Firebase for data storage and user authentication.",
-        "Ensured code quality by following best practices and regular testing."
-      ],
-      "tools": [
-        "JavaScript",
-        "OpenStreetMap",
-        "Firebase",
-        "HTML",
-        "Tailwind CSS"
-      ],
-      "achievements": [
-        "Improved user experience with real-time location tracking.",
-        "Streamlined navigation by optimizing the Dijkstra's algorithm implementation."
-      ]
-    },
-    {
-      "title": "Full-Stack Developer",
-      "company": "Grade 12 Application Helper",
-      "period": "July 2024 - Present",
-      "description": "Developed an app aimed at helping Grade 12 students in South Africa with university applications and bursary searches. Built features like APS score calculation, university application tracking, and integrated resources for bursary applications.",
-      "responsibilities": [
-        "Developed a user-friendly interface for students to apply for universities and bursaries.",
-        "Integrated APS score calculator using JavaScript to help students determine eligibility.",
-        "Implemented real-time university and bursary upperiods.",
-        "Managed back-end data with Firebase and deployed on the web."
-      ],
-      "tools": [
-        "ReactJS",
-        "Tailwind CSS",
-        "Firebase",
-        "JavaScript",
-        "GitHub"
-      ],
-      "achievements": [
-        "Enhanced user interaction with a seamless, step-by-step application process.",
-        "Grew user base to 500+ students within the first month of launch."
-      ]
-    }
-  ]
-  
-  export default { ExperienceDat } 
+  {
+    "title": "Freelance   Full-Stack Developer",
+    "company": "Jimney's Fish & Chips",
+    "location": "Remote",
+    "period": "March 2024 - june 2024",
+    "description": "Developed a responsive and visually appealing website for Jimney's Fish & Chips as a freelance project. The website was developed using ReactJS and Tailwind CSS, with Firebase integration for real-time updates and data storage.",
+    "responsibilities": [
+      "Developed a user-friendly, interactive website using ReactJS.",
+      "Implemented Firebase for real-time updates and managing customer orders.",
+      "Ensured the website is fully responsive, optimized for mobile and desktop.",
+      "Worked closely with the restaurant owner to deliver custom features and functionality."
+    ],
+    "tools": [
+      "ReactJS",
+      "Tailwind CSS",
+      "Firebase",
+      "JavaScript",
+      "GitHub"
+    ],
+    "achievements": [
+      "Enhanced online presence, leading to a 25% increase in customer engagement.",
+      "Improved user experience, reducing bounce rates by 15%."
+    ]
+  },
+  {
+    "title": "Full-Stack Developer",
+    "company": "OffCampusRooms",
+    "location": "Polokwane, South Africa",
+    "period": "Augaust 2024 - Present",
+    "description": "Led the development of OffCampusRooms, a platform helping students near the University of Limpopo find off-campus accommodation. Implemented a search and filtering system for users to easily find and connect with  landlords based on their preferences and budget.",
+    "responsibilities": [
+      "Designed and developed the full-stack web application using ReactJS and Firebase.",
+      "Integrated real-time listings, allowing users to browse available rooms with updated details.",
+      "Built user authentication and role-based access for students and landlords.",
+      "Optimized the application for mobile and desktop, ensuring accessibility."
+    ],
+    "tools": [
+      "ReactJS",
+      "Firebase",
+      "Tailwind CSS",
+      "JavaScript",
+      "GitHub"
+    ],
+    "achievements": [
+      "Successfully onboarded over 100 landlords, listing available rooms within the first month.",
+      "Increased platform traffic by 30% through responsive design and user-friendly interfaces."
+    ]
+  }
+];
+
+export default { ExperienceDat };

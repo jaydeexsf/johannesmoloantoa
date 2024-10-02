@@ -25,7 +25,7 @@ const Header = () => {
           rel="noopener noreferrer" 
           className="text-secondary-secondary-3 transition-transform transform hover:scale-110 hover:text-secondary-secondary-1 hover:shadow-lg"
         >
-          <FaGithub size={25} />
+          <FaGithub size={20} />
         </a>
         <a 
           href="https://linkedin.com/in/johannes-moloantoa-webdev" 
@@ -33,7 +33,7 @@ const Header = () => {
           rel="noopener noreferrer" 
           className="text-secondary-secondary-3 transition-transform transform hover:scale-110 hover:text-secondary-secondary-1 hover:shadow-lg"
         >
-          <FaLinkedin size={25} />
+          <FaLinkedin size={20} />
         </a>
         <a 
           href="https://twitter.com/@software_saga" 
@@ -41,7 +41,7 @@ const Header = () => {
           rel="noopener noreferrer" 
           className="text-secondary-secondary-3 transition-transform transform hover:scale-110 hover:text-secondary-secondary-1 hover:shadow-lg"
         >
-          <FaTwitter size={25} />
+          <FaTwitter size={20} />
         </a>
       </div>
     </div>

@@ -6,7 +6,7 @@ export const Contact = ()=> {
 
   
         return (
-           <div className="pt-[220px] md:pt-[120px]"> 
+           <div className="pt-[280px] md:pt-[120px]"> 
             <Section title="Say Hello To Me"/>
             <div className="contact-details mt-12 text-tertiary-tertiary-2 px-12 h-[40vh]">
                 <div>{'{'}</div>

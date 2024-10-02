@@ -27,7 +27,7 @@ export const About = () => {
     <div className='flex flex-col pt-12 gap-8 pb-16'>
       <Section title="About Me" />
       <div className='bottom-about flex gap-4 justify-center items-center'>
-        <div className="left-abt border-secondary-secondary-2 border shadow-md hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[80%] transition-all duration-300 max-w-[100px]">
+        <div className="left-abt border-secondary-secondary-2 border shadow-sm hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[80%] transition-all duration-300 max-w-[100px]">
           <img src={myImage} className='sm:mt-[-80px] mt-[-50px]' alt="About Me" />
         </div>
         <div className="right-abt flex flex-col md:text-sm text-[12px] gap-4">

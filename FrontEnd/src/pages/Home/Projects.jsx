@@ -32,7 +32,7 @@ const Projects = () => {
 // console.log(ProjectsData.name)
 
   return (
-    <div className="sm:h-[60vh] pt-0 max-h-[500px] min-h-[400px] md:pb-[-10px] gap-8 w-full flex flex-col ">
+    <div className="sm:h-[60vh] pt-6 sm:pt-0 max-h-[500px] min-h-[400px] md:pb-[-10px] gap-8 w-full flex flex-col ">
       <Section title="Projects" className=""/>
       
       <div className="flex flex-col w-full md:gap-36 items-center  md:flex-row mt-2 h-full gap-2">
@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
 
         {/* Project details */}
-        <div className="rightExp flex-1 h-fit bg-gray-800 p-3 max-w-[900px] rounded-md shadow-lg">
+        <div className="rightExp flex-1 h-fit bg-gradient-to-r  from-secondary-secondary-2/20 to-primary-dark-bg-1 border shadow-md shadow-secondary-secondary-2 border-secondary-secondary-2 pb-8 bg-gray-800 p-3 max-w-[900px] rounded-md shadow-lg">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex gap-6 flex-col sm:flex-row`}>
               <div className='sm:w-[150%] h-full'>
@@ -90,7 +90,7 @@ const Projects = () => {
               </div>
               <div className="flex flex-wrap sm:justify-start justify-center text-center gap-2 mt-4">
                 {data.technologies.map((tech, idx) => (
-                  <span key={idx} className="bg-secondary-secondary-2 text-center text-[11px] py-[1px] px-1 rounded-sm text-primary-dark-bg-3">
+                  <span key={idx} className="bg-secondary-secondary-2 font-semibold text-center text-[12px] py-[3px] px-2 rounded-full text-primary-dark-bg-3">
                     {'#'+tech}
                   </span>
                 ))}
