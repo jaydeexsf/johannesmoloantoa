@@ -18,11 +18,11 @@ export const Intro = () => {
   
   return (
     <div className='flex flex-col gap-8 md:gap-10 w-full  sm:min-h-[420px] max-h-[450px] md:h-[70vh] py-8'>
-        <div className="text-sm">Hi, I'm </div>
-        <div className="text-secondary-secondary-1 text-3xl md:text-5xl ">
+        <div className="text-sm">Hi, my name is </div>
+        <div className="text-secondary-secondary-1 font-semibold text-3xl md:text-5xl ">
           Johannes Moloantoa
         </div>
-        <div className='md:text-5xl text-3xl'>
+        <div className='md:text-5xl font-bold text-3xl'>
         I Build Stuff For The Web
         </div>
         <div className="md:text-sm text-[12px] text-tertiary-tertiary-2 w-full md:w-[50vw]">
