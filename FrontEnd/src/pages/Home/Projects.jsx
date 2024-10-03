@@ -75,15 +75,15 @@ const Projects = () => {
                   href={data.sourceCode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary-secondary-3 underline hover:text-secondary-secondary-1 transition-all duration-300"
+                  className="text-secondary-secondary-3 hover:cursor-pointer underline hover:text-secondary-secondary-1 transition-all duration-300"
                 >
                   Source Code
                 </a>
                 <a
                   href={data.demoLink}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-secondary-secondary-3 underline hover:text-secondary-secondary-1 transition-all duration-300"
+                  rel="noope"
+                  className="text-secondary-secondary-3 hover:cursor-pointer underline hover:text-secondary-secondary-1 transition-all duration-300"
                 >
                   Live Demo
                 </a>
