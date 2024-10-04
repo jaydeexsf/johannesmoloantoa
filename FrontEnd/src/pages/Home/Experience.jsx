@@ -37,7 +37,7 @@ const [ExperienceData, setExperienceData] = useState(ExperienceDat)
           {ExperienceData.map((data, index)=> {
             return (
               <div className={`pt-0 ${selectedDate === index ? 'flex flex-col gap-4'  : 'hidden'} text-white`}> 
-                <h1 className="title text-secondary-secondary-3 font-semibold">{data.title}</h1>
+                <h1 className="title text-secondary-secondary-2 text-xl font">{data.title}</h1>
                 <span className="company mt-[-13px] mb-2 text-[12px] ">{data.company}</span>
                 <span className="what-i-did w-full text-sm text-tertiary-tertiary-2">{data.responsibilities}
                 </span>

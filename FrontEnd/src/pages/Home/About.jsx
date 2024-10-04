@@ -26,12 +26,12 @@ export const About = () => {
   return (
     <div className='flex flex-col pt-12 gap-8 pb-16'>
       <Section title="About Me" />
-      <div className='bottom-about w-full flex gap-4 justify-center items-center'>
+      <div className='bottom-about w-full flex gap-4 md:gap-[100px] justify-center items-center'>
         <div className="left-abt border-secondary-secondary-2 border shadow-sm hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[150%] transition-all duration-300 max-w-[150px]">
-          <img src={myImage} className='sm:mt-[-80px] sm:w-[150%] w-[150%] sm:-fit h-[210px] object-cover mt-[-50px]' alt="About Me" />
+          <img src={myImage} className='sm:mt-[-80px] sm:w-[150%] w-[150%] min-h-[250px] sm:-fit h-[45vw] max-h-[300px] object-cover mt-[-50px]' alt="About Me" />
         </div>
         <div className="right-abt flex flex-col md:text-sm w-[100%] text-[12px] gap-4">
-        <span className='text-tertiary-tertiary-2'>
+        <span className='text-tertiary-tertiary-2 md:max-w-[500px]'>
     I’m a forward-thinking full-stack developer with a strong focus on creating sleek, interactive web apps. I’m driven by the art of building seamless, responsive user experiences.
 </span>
 <span className='text-tertiary-tertiary-2'>
@@ -49,8 +49,8 @@ export const About = () => {
                 className='text-[12px] md:text-sm hover:bg-gradient-to-r rounded-sm hover:shadow-lg  hover:shadow-secondary-secondary-2 from-primary-dark-bg-3 to-black text-se gap-1 px-4 py-1 flex-wrap flex-col  flex items-center justify-center'
                 key={skill.id}
               >
-                <img src={skill.icon} className='w-12 h-12 md:w-16 md:h-16' alt={skill.skill} />
-                <span className='flex text-secondary-secondary-2 flex-none'>{skill.skill}</span>
+                <img src={skill.icon} className='w-8 h-8 md:w-12 md:h-12' alt={skill.skill} />
+                <span className='flex text-secondary-secondary-2 text-[11px] md:text-xs flex-none'>{skill.skill}</span>
               </div>
             );
           })}

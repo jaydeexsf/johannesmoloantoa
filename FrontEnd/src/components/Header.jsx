@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Header = ({prof}) => {
   return ( 
-    <div className="bg-primary-dark-bg-1 sticky top-0 left-0 z-[1000000000000] text-white font-semibold p-4 flex items-center justify-between">
+    <div className="bg-slate-950 bg-gradient-to-tr from-slate-950 to-slate-800 sticky top-0 left-0 z-[1000000000000] text-white font-semibold p-4 flex items-center justify-between">
       {/* <div className="name text-2xl">
         <span className="text-secondary-secondary-3 text-3xl"></span> 
       </div> */}
