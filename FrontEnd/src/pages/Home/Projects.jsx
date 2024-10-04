@@ -42,7 +42,7 @@ const Projects = () => {
                    <img className="w-[100%] rounded-lg md: object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={img2} alt={data.name} />
               </div>
               <div className="sm:w-[60%] md:hidden">
-                <h1 className="text-teal-400 sm:hidden text-xl font- text-cente mb-2">{data.name}</h1>
+                <h1 className="text-secondary-secondary-2 sm:hidden text-xl font- text-cente mb-2">{data.name}</h1>
                 <div className="flex flex-wrap font-extralight justify-cente mt-[-10px] sm:justify-start gap-2 ">
                   {data.technologies.map((tech, idx) => (
                     <span
@@ -56,7 +56,7 @@ const Projects = () => {
               </div>
 
               <div className="flex flex-col mt-[] gap-4 sm:w-[40%] text-cente sm:text-left">
-                <h1 className="text-teal-400 hidden sm:block text-2xl font-">{data.name}</h1>
+                <h1 className="text-secondary-secondary-2 hidden sm:block text-2xl font-">{data.name}</h1>
                 <div className="sm:w-[60%] md:mt-[-10px]">
                   <div className=" flex-nowrap font-extralight hidden md:flex justify-cente mt-[-10px] sm:justify-start gap-2 ">
                     {data.technologies.map((tech, idx) => (

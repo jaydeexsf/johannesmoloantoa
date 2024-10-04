@@ -47,7 +47,7 @@ const Home = () => {
           style={{ top: position.top, left: position.left}}
         >
         </div>
-      <div className='bg-primary-dark-bg-2 bg-gradient-to-r z-[2] from-slate-950 flex flex-col px-8 xl:px-[11%] 2xl:px-[20%] sm:px-[10vw]'>
+      <div className='bg-primary-dark-bg-2 bg-gradient-to-r z-[2] from-slate-950 flex flex-col px-4 xl:px-[11%] 2xl:px-[20%] sm:px-[10vw]'>
         <div
           className='absolute text-white w-2 h-2 bg-secondary-secondary-2 rounded-full transition-all duration-[1.8s] text-2xl font-bold z-[10] animate-bounce'
           style={{ top: position.top, left: position.left}}

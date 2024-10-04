@@ -28,13 +28,13 @@ export const About = () => {
       <Section title="About Me" />
       <div className='bottom-about w-full flex gap-4 md:gap-[100px] justify-center items-center'>
         <div className="left-abt border-secondary-secondary-2 border shadow-sm hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[150%] transition-all duration-300 max-w-[150px]">
-          <img src={myImage} className='sm:mt-[-80px] sm:w-[150%] w-[150%] min-h-[250px] sm:-fit h-[45vw] max-h-[300px] object-cover mt-[-50px]' alt="About Me" />
+          <img src={myImage} className='sm:mt-[-80px] sm:w-[150%] w-[150%] min-h-[270px] sm:-fit h-[45vw] max-h-[300px] object-cover mt-[-50px]' alt="About Me" />
         </div>
         <div className="right-abt flex flex-col md:text-sm w-[100%] text-[12px] gap-4">
-        <span className='text-tertiary-tertiary-2 md:max-w-[500px]'>
+        <span className='text-tertiary-tertiary-2 md:max-w-[410px]'>
     I’m a forward-thinking full-stack developer with a strong focus on creating sleek, interactive web apps. I’m driven by the art of building seamless, responsive user experiences.
 </span>
-<span className='text-tertiary-tertiary-2'>
+<span className='text-tertiary-tertiary-2  md:max-w-[410px]'>
     On the backend, I design efficient, secure APIs and manage complex data systems. My goal? To merge creativity with functionality, crafting digital solutions that make an impact.
 </span>
 
