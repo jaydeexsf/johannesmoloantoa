@@ -24,7 +24,7 @@ const ProjectsIn = [
     "name": "OffCampusRooms",
     "description": "A web application that helps students at the University of Limpopo find the nearest classes and buildings using OpenStreetMap data and Dijkstra's Algorithm for navigation.",
     "sourceCode": "https://github.com/jaydeexsf/OffCampusRooms",
-    "demoLink": "https://jaydeexsf.github.io/OffCampusRooms/",
+    "demoLink": "https://off-campus-rooms.vercel.app/",
     "technologies": ["ReactJS", "NodeJS", "Tailwind CSS", "ExpressJS", "MongoDB"]
   },
 ];
