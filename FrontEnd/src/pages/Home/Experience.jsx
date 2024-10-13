@@ -22,9 +22,9 @@ const makeResponsibiliteVisible = ()=> {
 }
 
   return (  
-    <div className='md:h-[60vh]  pt-8 lg:pb-16 pb-12 w-full flex flex-col gap-8'>
+    <div className='md:h-fit pt-8 lg:pb-16 pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
-      <div className='flex w-full flex-col md:flex-row mt-  justify-between pt-4 items-center'>
+      <div className='flex w-full flex-col md:flex-row mt-  justify-between pt-4 items-cente'>
 
         <div className="leftExp flex gap-2 flex-row flex-shrink-0 overflow-auto w-full md:flex-col md:w-1/3">
           {ExperienceData.map((data, index)=> {
@@ -45,16 +45,15 @@ const makeResponsibiliteVisible = ()=> {
                 <h1 className="title text-secondary-secondary-2 text-xl font">{data.title}</h1>
                 <span className="company mt-[-13px] mb-2 text-[12px] ">{data.company}</span>
                 <span className="what-i-did w-full lg:w-[500px] text-sm text-tertiary-tertiary-2">{data.description}</span>
-                <button onClick={makeResponsibiliteVisible} className='bg-secondary-secondary-2/70 rounded-full text-primary-dark-bg-1 text-xs px-1 py-2'>{isShowingResponsibilities ? 'Hide ' : 'See ' } Responsibilites</button>
+                <button onClick={makeResponsibiliteVisible} className='bg-secondary-secondary-2/70 max-w-[500px] rounded-full text-primary-dark-bg-1 text-xs px-1 py-2'>{isShowingResponsibilities ? 'Hide ' : 'See ' } Responsibilites</button>
                 {isShowingResponsibilities ? <span className="what-i-did w-full lg:w-[500px] text-[13px]  text-tertiary-tertiary-2">
 
                   <span className="what-i-did w-full lg:w-[500px] text-[13px] text-tertiary-tertiary-2">
                   {data.responsibilities.map((responsibility, index) => {
-    const highlightWords = ["MongoDB", "ReactJS", "Tailwind CSS", "authentication", "NodeJS", "", "Goole API", " PDF parsing", "vercel ", "render ", "university prospectus", "JSON format"];
+    const highlightWords = ["MongoDB", "ReactJS", "authentication", "NodeJS", "", "Goole API", " PDF", "parsing", "vercel", "render", "university", "prospectus", "JSON", "format"];
     
     const regex = new RegExp(`(${highlightWords.join('|')})`, 'gi');
     
-    // Split the responsibility string using the regex
     const parts = responsibility.split(regex);
     
     return (

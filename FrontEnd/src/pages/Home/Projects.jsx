@@ -19,7 +19,7 @@ const Projects = () => {
     <div className="sm:h-[60vh] pt-6 sm:pt-0 max-h-[400px] min-h-[350px] w-full flex flex-col">
       <Section title="Projects" />
 
-      <div className="flex flex-col w-full md:gap-16 items-center md:flex-row mt-12 h-full gap-4">
+      <div className="flex flex-col w-full md:gap-16 items-cente md:flex-row mt-12 h-full gap-4">
         {/* Scrollable container for project names */}
         <div className="w-full md:w-auto mb-4 overflow-x-auto pb-6 flex md:flex-col items-center space-x-4 md:space-x-0">
           {ProjectsData.map((data, index) => (
@@ -38,8 +38,8 @@ const Projects = () => {
         <div className="rightExp flex-1 h-fit shadow-teal-500 p-4 mt-[-30px] rounded-md">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col sm:flex-row gap-6`}>
-              <div className='w-[40%] hidden md:flex '>
-                   <img className="w-[100%] rounded-lg md: object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={data.image} alt={data.name} />
+              <div className='w-[40%] lg:w-[50%] hidden md:flex '>
+                   <img className="w-[100%] rounded-lg md: object-cover h-[260px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={data.image} alt={data.name} />
               </div>
               <div className="sm:w-[60%] md:hidden">
                 <h1 className="text-secondary-secondary-2 sm:hidden text-xl font- text-cente mb-2">{data.name}</h1>
@@ -79,7 +79,7 @@ const Projects = () => {
                     href={data.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center bg-secondary-secondary-2 text-primary-dark-bg-2 hover:bg-secondary-secondary-2/80 px-4 py-2 text-xs rounded-md hover:bg-secondary-secondary-2 transition duration-300"
+                    className="flex items-center bg-secondary-secondary-2 hover:cursor-pointer text-primary-dark-bg-2 hover:bg-secondary-secondary-2/80 px-4 py-2 text-xs rounded-md hover:bg-secondary-secondary-2 transition duration-300"
                   >
                      Source Code <FaGithub className="ml-1" />
                   </a>
@@ -87,7 +87,7 @@ const Projects = () => {
                     href={data.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center bg-secondary-secondary-2 text-primary-dark-bg-2 hover:bg-secondary-secondary-2/80 px-4 py-2 text-xs rounded-md hover:bg-secondary-secondary-2 transition duration-300"
+                    className="flex items-center bg-secondary-secondary-2 hover:cursor-pointer text-primary-dark-bg-2 hover:bg-secondary-secondary-2/80 px-4 py-2 text-xs rounded-md hover:bg-secondary-secondary-2 transition duration-300"
                   >
                     Live Demo <FiExternalLink className="ml-1" /> 
                   </a>
