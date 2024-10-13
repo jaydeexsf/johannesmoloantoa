@@ -2,13 +2,7 @@ import all4queens from '../images/All4queens.png';
 import jimneys from '../images/jimneys.png'
 
 const ProjectsIn = [
-// {
-//   "name": "Guidance",
-//   "description": "An app that assists South African Grade 12 students with applying to universities, calculating APS scores, finding bursaries, and tracking deadlines.",
-//   "sourceCode": "https://github.com/jaydeexsf/UniPath",
-//   "demoLink": "https://jaydeexsf.github.io/UniPath/",
-//   "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express"]
-// },
+
 {
   "name": "Jimney's Fish & Chips",
   "description": "A responsive and visually appealing website for Jimney's Fish & Chips. The website allows users to browse the menu, place orders, and view real-time updates. Built using ReactJS and Tailwind CSS, with Firebase for data storage and real-time updates.",
