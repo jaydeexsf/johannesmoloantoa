@@ -33,7 +33,7 @@ export const ExperienceDat = [
     "company": "Guidance",
     "location": "Polokwane, South Africa",
     "period": "March 2024 - june 2024",
-    "description": "Developed the UniPath app, a comprehensive platform designed to help Grade 12 students apply to universities and colleges, calculate their APS scores, find bursaries, and stay informed about critical application deadlines like NSFAS.",
+    "description": "Lead the developement for UniPath app, a comprehensive platform designed to help Grade 12 students apply to universities and colleges, calculate their APS scores, find bursaries, and stay informed about critical application deadlines like NSFAS.",
     "responsibilities": [
       "Developed the front-end using ReactJS and Tailwind CSS and the Backend with NodeJS, Express and MongoDB for storing data.",
       "I utilized a PDF parsing library to convert university prospectus data into JSON format. After cleaning and structuring the data,  i integrated it to dynamically retrieve degrees and courses within the application.",

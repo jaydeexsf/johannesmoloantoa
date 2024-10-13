@@ -16,7 +16,7 @@ const Experience = () => {
   return (  
     <div className='md:h-fit pt-8 lg:pb-16 pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
-      <div className='flex w-full flex-col md:flex-row justify-between pt-4 items-center'>
+      <div className='flex w-full flex-col md:flex-row justify-between pt-4 items-cente'>
         <div className="leftExp flex gap-2 flex-row flex-shrink-0 overflow-auto w-full md:flex-col md:w-1/3">
           {ExperienceData.map((data, index) => (
             <div 
