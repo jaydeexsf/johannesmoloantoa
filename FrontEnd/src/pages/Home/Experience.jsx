@@ -9,15 +9,20 @@ const Experience = () => {
 //   const { portfolioData } = useContext(ModeContext);
 
 const [ExperienceData, setExperienceData] = useState(ExperienceDat)
+const [isShowingResponsibilities, setIsShowingResponsibilities] = useState(false)
 
 // useEffect(()=> {
 //     if(portfolioData) {
 //         setExperienceData(portfolioData.experience)
 //     }
-// }, [portfolioData])
+// }, [portfolioData])\\const makeResponsibiliteVisible
+
+const makeResponsibiliteVisible = ()=> {
+  setIsShowingResponsibilities(!isShowingResponsibilities)
+}
 
   return (  
-    <div className='md:h-[60vh] max-h-[400px] pt-8  pb-12 w-full flex flex-col gap-8'>
+    <div className='md:h-[60vh]  pt-8 lg:pb-16 pb-12 w-full flex flex-col gap-8'>
       <Section title="Experience"/>
       <div className='flex w-full flex-col md:flex-row mt-  justify-between pt-4 items-center'>
 
@@ -39,8 +44,35 @@ const [ExperienceData, setExperienceData] = useState(ExperienceDat)
               <div className={`pt-0 ${selectedDate === index ? 'flex flex-col gap-4'  : 'hidden'} text-white`}> 
                 <h1 className="title text-secondary-secondary-2 text-xl font">{data.title}</h1>
                 <span className="company mt-[-13px] mb-2 text-[12px] ">{data.company}</span>
-                <span className="what-i-did w-full text-sm text-tertiary-tertiary-2">{data.responsibilities}
-                </span>
+                <span className="what-i-did w-full lg:w-[500px] text-sm text-tertiary-tertiary-2">{data.description}</span>
+                <button onClick={makeResponsibiliteVisible} className='bg-secondary-secondary-2/70 rounded-full text-primary-dark-bg-1 text-xs px-1 py-2'>{isShowingResponsibilities ? 'Hide ' : 'See ' } Responsibilites</button>
+                {isShowingResponsibilities ? <span className="what-i-did w-full lg:w-[500px] text-[13px]  text-tertiary-tertiary-2">
+
+                  <span className="what-i-did w-full lg:w-[500px] text-[13px] text-tertiary-tertiary-2">
+                  {data.responsibilities.map((responsibility, index) => {
+    const highlightWords = ["MongoDB", "ReactJS", "Tailwind CSS", "authentication", "NodeJS", "", "Goole API", " PDF parsing", "vercel ", "render ", "university prospectus", "JSON format"];
+    
+    const regex = new RegExp(`(${highlightWords.join('|')})`, 'gi');
+    
+    // Split the responsibility string using the regex
+    const parts = responsibility.split(regex);
+    
+    return (
+      <span key={index}>
+        {parts.map((part, idx) => (
+          <span key={idx}>
+            {highlightWords.includes(part) ? (
+              <span className="text-red-500">{part}</span>
+            ) : (
+              part
+            )}
+          </span>
+        ))}
+      </span>
+    );
+  })}
+</span>
+                </span> : '' }
               </div>
             )
           })}

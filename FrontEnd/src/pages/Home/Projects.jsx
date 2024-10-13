@@ -39,7 +39,7 @@ const Projects = () => {
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col sm:flex-row gap-6`}>
               <div className='w-[40%] hidden md:flex '>
-                   <img className="w-[100%] rounded-lg md: object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={img2} alt={data.name} />
+                   <img className="w-[100%] rounded-lg md: object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={data.image} alt={data.name} />
               </div>
               <div className="sm:w-[60%] md:hidden">
                 <h1 className="text-secondary-secondary-2 sm:hidden text-xl font- text-cente mb-2">{data.name}</h1>
@@ -69,7 +69,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                <p className="bg-gradient-to-r mt-[-22px] md:mt-[0] text-tertiary-tertiary-2 from-secondary-secondary-2/20 to-gray-800 text-sm p-2 rounded-md">
+                <p className="bg-gradient-to-r mt-[-22px] md:mt-[0] text-tertiary-tertiary-2 from-secondary-secondary-1/10 to-secondary-secondary-2/20 text-sm font-light p-2 rounded-md">
                   {data.description}
                 </p>
 
@@ -93,7 +93,7 @@ const Projects = () => {
                   </a>
                 </div>
                 <div className=''>
-                   <img className="w-full rounded-lg md:hidden object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={img2} alt={data.name} />
+                   <img className="w-full rounded-lg md:hidden object-cover h-[240px]  border-r-secondary-secondary-2 border-r-4 border-b-secondary-secondary-2 border-b-8" src={data.image} alt={data.name} />
                 </div>
               </div>
             </div>
