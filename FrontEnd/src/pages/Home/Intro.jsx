@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import CV from '../../assets/resources/JohannesMoloantoaCV.pdf'
+import CV from '../../assets/resources/JohannesMoloantoaResume.pdf'
 // import { ModeContext } from '../../components/ModeContext'
 // import { set } from 'mongoose';
 
