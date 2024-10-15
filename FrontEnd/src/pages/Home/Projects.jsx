@@ -38,8 +38,8 @@ const Projects = () => {
         <div className="rightExp flex-1 h-fit shadow-teal-500 p-4 mt-[-30px] rounded-md">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col sm:flex-row gap-6`}>
-             <div className='border-l-tertiary-tertiary-3 md:block hidden border-l-[7px] border-t-[15px] max-h-[295px] bg-tertiary-tertiary-3 rounded-br-2xl rounded-t-lg border-t-tertiary-tertiary-3'>
-                   <img className="w-full rounded-br-2xl object-cover h-[280px] shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
+             <div className='h-[270px] hidden md:block'>
+                   <img className="w-full rounded-br-2xl object-cover h-[270px] shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
                 </div>
               <div className="sm:w-[60%] md:hidden">
                 <h1 className="text-secondary-secondary-2 sm:hidden text-xl nowrap w-[100vw] text-nowrap text-cente mb-2">{data.name}</h1>
@@ -92,8 +92,8 @@ const Projects = () => {
                     Live Demo <FiExternalLink className="ml-1" /> 
                   </a>
                 </div>
-                <div className='border-l-tertiary-tertiary-3 md:hidden border-l-[7px] border-t-[15px] bg-tertiary-tertiary-3 rounded-br-2xl rounded-t-lg border-t-tertiary-tertiary-3'>
-                   <img className="w-full rounded-br-2xl md:hidden object-cover h-[280px] shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
+                <div className='h-[250px] block md:hidden'>
+                   <img className="w-full rounded-br-2xl md:hidden object-cover h-[250px] shadow-secondary- rounded-tl-2xl" src={data.image} alt={data.name} />
                 </div>
               </div>
             </div>
