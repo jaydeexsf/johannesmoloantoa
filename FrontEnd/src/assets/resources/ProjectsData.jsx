@@ -1,4 +1,4 @@
-import all4queens from '../images/All4queens.png';
+import all4queens from '../images/All4Queens.png';
 import jimneys from '../images/jimneys.png';
 import equity from "../images/equityoffers.png"
 
