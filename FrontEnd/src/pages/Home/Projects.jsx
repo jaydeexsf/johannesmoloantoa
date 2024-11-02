@@ -3,7 +3,6 @@ import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
 import { FiExternalLink } from 'react-icons/fi'; // Import arrow icon for external link
 import Section from '../../components/Section';
 import ProjectsIn from '../../assets/resources/ProjectsData';
-import img2 from '../../assets/images/Jimneys.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
