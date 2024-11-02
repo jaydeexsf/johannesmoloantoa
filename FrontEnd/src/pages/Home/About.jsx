@@ -14,7 +14,9 @@ export const About = () => {
     { id: 4, skill: 'Node.js', icon: 'https://img.icons8.com/color/48/000000/nodejs.png' },
     { id: 5, skill: 'Express.js', icon: 'https://img.icons8.com/color/48/000000/express.png' },
     { id: 6, skill: 'MongoDB', icon: 'https://img.icons8.com/color/48/000000/mongodb.png' },
-    { id: 7, skill: 'Firebase', icon: 'https://img.icons8.com/color/48/000000/firebase.png' }
+    { id: 7, skill: 'Firebase', icon: 'https://img.icons8.com/color/48/000000/firebase.png' },
+    { id: 8, skill: 'NextJs', icon: 'https://img.icons8.com/color/48/000000/nextjs.png' },
+    { id: 8, skill: 'Typescript', icon: 'https://img.icons8.com/color/48/000000/typescript.png' },
   ]);
 
   // useEffect(() => {
@@ -28,7 +30,7 @@ export const About = () => {
       <Section title="About Me" />
       <div className='bottom-about w-full flex gap-4 md:gap-[100px] justify-center items-center'>
         <div className="left-abt border-secondary-secondary-2 border shadow-sm hover:shadow-lg shadow-secondary-secondary-2 hover:shadow-secondary-secondary- bg-black/50 bg-gradient-to-r from-secondary-secondary-2 to-bla hover:border-secondary-secondary-1 hover:from-secondary-secondary-1 hover:to-black/10 hover:shadow-secondary-secondary-1 w-[150%] transition-all duration-300 max-w-[150px]">
-          <img src={myImage} className='sm:mt-[-80px] lg:h-[230px] sm:w-[150%] w-[150%]  sm:-fit h-[47vw] max-h-[280px] object-cover mt-[-50px]' alt="About Me" />
+          <img src={myImage} className='sm:mt-[-80px] lg:h-[230px] sm:w-[150%] w-[150%]  sm:-fit h-[47vw] max-h-[280px] min-h-[250px] object-cover mt-[-50px]' alt="About Me" />
         </div>
         <div className="right-abt flex flex-col md:text-sm w-[100%] text-[12px] gap-4">
         <span className='text-tertiary-tertiary-2 md:max-w-[600px]'>

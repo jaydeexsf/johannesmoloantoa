@@ -37,9 +37,9 @@ const Projects = () => {
         {/* Project details */}
         <div className="rightExp flex-1 h-fit shadow-teal-500 p-4 mt-[-30px] rounded-md">
           {ProjectsData.map((data, index) => (
-            <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex flex-col sm:flex-row gap-6`}>
-             <div className='h-[270px] hidden md:block'>
-                   <img className="w-full rounded-br-2xl object-cover h-[270px] shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
+            <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex relative flex-col sm:flex-row gap-6`}>
+             <div className='h-fit hidden md:block'>
+                   <img className="w-full rounded-br-2xl object-scale-down shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
                 </div>
               <div className="sm:w-[60%] md:hidden">
                 <h1 className="text-secondary-secondary-2 sm:hidden text-xl nowrap w-[100vw] text-nowrap text-cente mb-2">{data.name}</h1>
@@ -55,6 +55,8 @@ const Projects = () => {
                 </div>
               </div>
 
+              {data.status && <div className='absolute top-0 right-0 lg:right-[-20px] bg-secondary-secondary-3 text-black py-1 px-2 rounded-md'>{data.status}</div> }
+
               <div className="flex flex-col mt-[] gap-4 sm:w-[40%] text-cente sm:text-left">
                 <h1 className="text-secondary-secondary-2 hidden sm:block text-nowrap text-2xl font-">{data.name}</h1>
                 <div className="sm:w-[60%] md:mt-[-10px]">
@@ -69,7 +71,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                <p className="bg-gradient-to-r lg:w-[100%] md:w-[140%] mt-[-22px] md:mt-[0] text-tertiary-tertiary-2 from-secondary-secondary-1/10 to-secondary-secondary-2/20 text-sm font-light p-2 rounded-md">
+                <p className="bg-gradient-to-r lg:w-[100%] md:w-[140%] mt-[-22px] md:mt-[0] text-tertiary-tertiary-2 from-slate-950 to-secondary-secondary-2/30 text-sm font-light p-2 rounded-md">
                   {data.description}
                 </p>
 

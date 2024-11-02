@@ -28,34 +28,7 @@ export const ExperienceDat = [
     "link": "https://off-campus-rooms.vercel.app"
 
   },
-  {
-    "title": "Full Stack Developer",
-    "company": "Guidance",
-    "location": "Polokwane, South Africa",
-    "period": "March 2024 - june 2024",
-    "description": "Lead the developement for UniPath app, a comprehensive platform designed to help Grade 12 students apply to universities and colleges, calculate their APS scores, find bursaries, and stay informed about critical application deadlines like NSFAS.",
-    "responsibilities": [
-      "Developed the front-end using ReactJS and Tailwind CSS and the Backend with NodeJS, Express and MongoDB for storing data.",
-      "I utilized a PDF parsing library to convert university prospectus data into JSON format. After cleaning and structuring the data,  i integrated it to dynamically retrieve degrees and courses within the application.",
-      "Implemented APS calculation logic to guide students in determining their eligibility for various courses.",
-      "Built a dynamic university and bursary listing feature that provides real-time updates on open applications.",
-    ],
-    "tools": [
-      "ReactJS",
-      "Tailwind CSS",
-      "JavaScript",
-      "MongoDB",
-      "Express.JS",
-      "Node.JS",
-      "Firebase"
-    ],
-    "achievements": [
-      "Helped over 500 students calculate their APS scores and apply to universities in the first three months.",
-      "Increased student engagement by 40% through a streamlined, user-friendly interface.",
-      "Added real-time notifications for university application deadlines and bursary updates."
-    ]
-  },
-  
+
 ];
 
 export default { ExperienceDat };
