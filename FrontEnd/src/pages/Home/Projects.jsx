@@ -34,7 +34,7 @@ const Projects = () => {
         </div>
 
         {/* Project details */}
-        <div className="rightExp flex-1 h-fit shadow-teal-500 p-4 mt-[-30px] rounded-md">
+        <div className="rightExp flex-1 h-fit shadow-teal-500 py-2 mt-[-30px] rounded-md">
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex relative flex-col sm:flex-row gap-6`}>
              <div className='h-fit hidden md:block'>
