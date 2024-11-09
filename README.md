@@ -1,3 +1,3 @@
 This is my personal portfolio
 
-live demo: https://jimneys-resturant.vercel.app
+live demo: https://jaydeexsf.github.io/johannesmoloantoa
