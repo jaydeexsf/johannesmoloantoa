@@ -12,7 +12,7 @@ export const Contact = ()=> {
                 <div>{'{'}</div>
               {Object.entries(ContactData).map(([key, value], index) => (
                 <div key={index} className="detail-item px-4">
-                  <strong>{key}:</strong> {/* Capitalize the key */}
+                  <strong>{key}:</strong> 
                   {Array.isArray(value) ? (
                     <ul>
                       {value.map((item, idx) => (

@@ -25,7 +25,7 @@ const ProjectsIn = [
     "description": "EquityOffers is an application designed to help sellers list items such as courses and various products online at discounted prices based on the buyer's location, whether by country or state.",
     "sourceCode": "https://github.com/jaydeexsf/EquityOffers",
     "demoLink": "https://equityOffers.vercel.app",
-    "technologies": ["Next.js", "MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+    "technologies": ["Next.js", "TypeScript", "Drizzle", "React", "Tailwind CSS", "Neon"],
     "image": equity,
     "status": "Under Construction"
   }
