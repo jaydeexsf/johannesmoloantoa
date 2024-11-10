@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='relative'>
+    <div className='relative overflow-x-hidden'>
       <Header />
       <div
           className='absolute text-white w-2 h-2 bg-secondary-secondary-2 rounded-full transition-all duration-[3s] text-2xl font-bold z-[10] animate-bounce'
