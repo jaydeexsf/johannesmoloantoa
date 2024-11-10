@@ -6,7 +6,7 @@ const ProjectsIn = [
 
 {
   "name": "Jimney's Fish & Chips",
-  "description": "A responsive and visually appealing website for Jimney's Fish & Chips. The website allows users to browse the menu, place orders, and view real-time updates. Built using ReactJS and Tailwind CSS, with Firebase for data storage and real-time updates.",
+  "description": "A Website for a local resturant. The website allows admin to login and add, edit and delete menu products, place orders. It allows data storage and real-time updates.",
   "sourceCode": "https://jimneys-resturant.vercel.app",
   "demoLink": "https://jimneys-resturant/.vercel.app",
   "technologies": ["React", "Tailwind CSS", "Firebase", "JavaScript"],
@@ -17,7 +17,7 @@ const ProjectsIn = [
   "name": "Thaw Construction",
   "description": "A simple website built for a construction company to showcase their services, projects, and contact information.",
   "sourceCode": "https://github.com/yourusername/thaw-construction",
-  "demoLink": "https://thaw-construction.vercel.app",
+  "demoLink": "https://thaw-theta.vercel.app",
   "technologies": ["HTML", "CSS", "JavaScript"],
   "image": thaw
 }

@@ -38,7 +38,7 @@ const Projects = () => {
           {ProjectsData.map((data, index) => (
             <div key={index} className={`${selectedProject === index ? 'block' : 'hidden'} flex relative flex-col sm:flex-row gap-6`}>
              <div className='h-fit hidden md:block'>
-                   <img className="w-full rounded-br-2xl object-scale-down shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
+                   <img className="w-full max-h-[280px] min-h-[200px] rounded-br-2xl object-cover shadow-md shadow-black rounded-tl-2xl" src={data.image} alt={data.name} />
                 </div>
               <div className="sm:w-[60%] md:hidden">
                 <h1 className="text-secondary-secondary-2 sm:hidden text-xl nowrap w-[100vw] text-nowrap text-cente mb-2">{data.name}</h1>

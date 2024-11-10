@@ -48,11 +48,11 @@ export const About = () => {
           {skills.map((skill) => {
             return (
               <div
-                className='text-[12px] md:text-sm hover:bg-gradient-to-r rounded-sm hover:shadow-lg  hover:shadow-secondary-secondary-2 from-primary-dark-bg-3 to-black text-se gap-1 px-4 py-1 flex-wrap flex-col  flex items-center justify-center'
+                className='text-[12px] md:text-sm text-secondary-secondary-2 hover:text-black hover:bg-gradient-to-r rounded-sm hover:shadow-lg  hover:shadow-secondary-secondary-2 from-secondary-secondary-3 to-secondary-secondary-1 text-se gap-1 px-4 py-1 flex-wrap flex-col  flex items-center justify-center'
                 key={skill.id}
               >
-                <img src={skill.icon} className='w-8 h-8 md:w-12 md:h-12' alt={skill.skill} />
-                <span className='flex text-secondary-secondary-2 text-[11px] md:text-xs flex-none'>{skill.skill}</span>
+                <img src={skill.icon} className='w-8 h-8 md:w-12 md:h-12 ' alt={skill.skill} />
+                <span className='flex  text-[11px] md:text-xs flex-none  '>{skill.skill}</span>
               </div>
             );
           })}
