@@ -8,7 +8,7 @@ const ProjectsIn = [
   "name": "Jimney's Fish & Chips",
   "description": "A Website for a local resturant. The website allows admin to login and add, edit and delete menu products, place orders. It allows data storage and real-time updates.",
   "sourceCode": "https://jimneys-resturant.vercel.app",
-  "demoLink": "https://jimneys-resturant/.vercel.app",
+  "demoLink": "https://jimneys-resturant.vercel.app",
   "technologies": ["React", "Tailwind CSS", "Firebase", "JavaScript"],
   "image": jimneys
 },
